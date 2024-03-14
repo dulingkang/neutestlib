@@ -18,7 +18,7 @@ with open('README.md') as f:
   _long_description = f.read()
 
 d = dict(
-  name='neurailib',
+  name='neutestlib',
   version=version,
   description='C++/CUDA Library for NeurAI',
   long_description=_long_description,
