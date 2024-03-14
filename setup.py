@@ -5,12 +5,13 @@ import os
 cuda_version = os.environ.get('CUDA_VERSION')
 
 version = '0.1.0'
+name = 'neutestlib'
 
 using_cuda = True
 if cuda_version == '11':
-  version += '+cu11'
+  name += '_cu11'
 elif cuda_version == '12':
-  version += '+cu12'
+  name += '_cu12'
 else:
   using_cuda = False
 
@@ -18,7 +19,8 @@ with open('README.md') as f:
   _long_description = f.read()
 
 d = dict(
-  name='neutestlib',
+  name=name,
+  packages=['neutestlib'],
   version=version,
   description='C++/CUDA Library for NeurAI',
   long_description=_long_description,
