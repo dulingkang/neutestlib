@@ -4,7 +4,7 @@ import os
 
 cuda_version = os.environ.get('CUDA_VERSION')
 
-version = '0.1.0'
+version = '0.1.1'
 name = 'neutestlib'
 
 using_cuda = True
